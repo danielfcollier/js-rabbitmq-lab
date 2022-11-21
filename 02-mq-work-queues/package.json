@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "worker": "node worker.js",
+    "task": "node newTask.js",
+    "start": "npm run worker"
+   },
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}
