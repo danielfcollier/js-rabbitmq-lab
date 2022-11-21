@@ -15,14 +15,9 @@ services:
     restart: always
     networks:
         - rabbitmq_go_net
-
 volumes:
     rabbitmq_data:
     rabbitmq_log:
-    logs-folder:
-        name: ${log_rabbitmq_management}
-        driver: local
-
 networks:
   rabbitmq_go_net:
     driver: bridge
