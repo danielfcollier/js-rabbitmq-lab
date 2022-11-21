@@ -16,10 +16,10 @@ amqp.connect("amqp://localhost", (error0, connection) => {
     });
     channel.publish(exchange, "", Buffer.from(msg));
     console.log(` [x] Sent ${msg}`);
-  });
 
-  setTimeout(() => {
-    connection.close();
-    process.exit(0);
-  }, 500);
+    setTimeout(() => {
+      connection.close();
+      process.exit(0);
+    }, 500);
+  });
 });
