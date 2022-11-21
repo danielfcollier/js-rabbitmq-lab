@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  rabbitmq:
+    image: rabbitmq:3.9-management
+    container_name: rabbitmq
+    ports:
+        - 5672:5672
+        - 15672:15672
+    volumes:
+        - rabbitmq_data:/var/lib/rabbitmq/
+        - rabbitmq_log:/var/log/rabbitmq/
+    environment:
+        - RABBITMQ_DEFAULT_USER = guest
+        - RABBITMQ_DEFAULT_PASS = guest
+    restart: always
+    networks:
+        - rabbitmq_go_net
+
+volumes:
+    rabbitmq_data:
+    rabbitmq_log:
+    logs-folder:
+        name: ${log_rabbitmq_management}
+        driver: local
+
+networks:
+  rabbitmq_go_net:
+    driver: bridge
