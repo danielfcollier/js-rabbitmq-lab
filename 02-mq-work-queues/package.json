@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "worker": "node worker.js",
-    "task": "node newTask.js",
-    "start": "npm run worker"
+    "send": "node newTask.js",
+    "receive": "node worker.js"
    },
   "dependencies": {
     "amqplib": "^0.10.3"

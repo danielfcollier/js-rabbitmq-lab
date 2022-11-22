@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "receive": "node receiveLogsDirect.js",
-    "emit": "node emitLogDirect.js"
+    "send": "node emitLogDirect.js",
+    "receive": "node receiveLogsDirect.js"
   },
   "dependencies": {
     "amqplib": "^0.10.3"

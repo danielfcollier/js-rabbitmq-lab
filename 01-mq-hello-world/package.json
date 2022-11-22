@@ -1,8 +1,7 @@
 {
   "scripts": {
     "send": "node send.js",
-    "receive": "node receive.js",
-    "start": "npm run receive"
+    "receive": "node receive.js"
    },
   "dependencies": {
     "amqplib": "^0.10.3"

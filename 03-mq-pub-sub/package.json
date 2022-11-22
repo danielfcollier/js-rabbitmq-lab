@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "emit": "node emitLog.js",
-    "receive": "node receiveLogs.js",
-    "start": "npm run receive"
+    "send": "node emitLog.js",
+    "receive": "node receiveLogs.js"
    },
   "dependencies": {
     "amqplib": "^0.10.3"
