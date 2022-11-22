@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "receive": "node receiveLogsDirect.js",
+    "emit": "node emitLogDirect.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}
